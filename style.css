@@ -1,28 +1,47 @@
 *{
   padding: 0;
   margin: 0;
-  background: #103679;
+  background-color: rgba(255, 255, 255, 0);
   color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+
+.backroundImage{
+  width: 100vw;
+  height: 100vh;
+}
+    
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
 }
 
 .game{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
 }
 
 .chooseWeapon{
   text-align: center;
-  margin-top: 80px;
   font-size: 50px;
 }
 
 .scores{
   display: flex;
   justify-content: space-evenly;
-  gap: 50px;
+  gap: 100px;
   margin-top: 30px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .pScore,.cScore{
@@ -47,29 +66,32 @@
 }
 
 #rock {
-  background-color: gray;
+  background-color: rgb(106, 99, 90);
 }
 
 #paper {
-  background-color: rgb(244, 244, 244);
-  color:#103679;
+  background-color: rgb(239, 237, 230);
+  color:#26221e;
 }
 
 #scissors {
-  background-color: rgb(1, 129, 27);
+  background-color: rgb(48, 82, 35);
 }
 
 .reload {
   display: none;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  background: white;
+  color: #26221e;
   padding: 1rem;
-  background: green;
-  border: none;
+  width: 100px;
+  font-size: 20px;
   border-radius: 10px;
+  border: none;
   cursor: pointer;
 }
 
 .winner{
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 40px;
 }

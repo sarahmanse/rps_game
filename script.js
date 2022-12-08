@@ -59,12 +59,10 @@ function gameOver(playerOptions) {
   if(playerScore > computerScore){
     result.style.fontSize = '4rem';
     result.innerText = 'You won the game!!'
-    result.style.color = 'green';
   }
   else {
       result.style.fontSize = '4rem';
       result.innerText = 'You lost the game :(';
-      result.style.color = 'red';
   }
 
   reloadBtn.innerText = 'Restart';
